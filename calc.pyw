@@ -20,6 +20,9 @@ def eq():
     except ArithmeticError:
         entry.insert(len(entry.get()), 'Error')
         result = ''
+    except SyntaxError:
+        entry.insert(len(entry.get()), 'Error')
+        result = ''
 
 def bldExpr(x):
     global result
